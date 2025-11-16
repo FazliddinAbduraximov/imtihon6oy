@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yellowtail&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Open Sans", sans-serif;
+  --third-family: "Yellowtail", sans-serif;
+  --font3: "Inter", sans-serif;
+
+  --search-btn-color: #7eb693;
+  --header-color: #274c5b;
+  --green-colol1: #68a47f;
+  --dark-color: #1a1a1a;
+  --herro-h-color:#274c5b;
+  --light-color: #f5f5f5;
+  --gray-color: #808080;
+}
+
+
+@theme inline {
+  /* font */
+  --font-primary: var(--font-family);
+  --font-second-family: var(--second-family);
+  --font-third-family: var(--third-family);
+  --font-font3: var(--font3);
+
+  /* color */
+  --color-btn: var(--search-btn-color);
+  --color-link: var(--header-color);
+  --color-gren:var(--green-colol1);
+  --color-hero-h:var(--herro-h-color);
+  --color-dark: var(--dark-color);
+  --color-light: var(--light-color);
+  --color-gray: var(--gray-color);
+}
+
+@utility font-primary {
+  font-family: var(--font-primary);
+}
+@utility font-second-family {
+  font-family: var(--font-second-family);
+}
+@utility font-third-family {
+  font-family: var(--font-third-family);
+}
+@utility font-font3 {
+  font-family: var(--font-font3);
+}
+
+
+body {
+  font-family: var(--font-family);
+  color:#525c60;
+  background-color:#f9f8f8;
+}
+
+
+.container{
+  max-width: 1635px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
